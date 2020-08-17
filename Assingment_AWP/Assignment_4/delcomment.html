@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="comment.js"></script>
+    <style>
+        .main {
+            flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        #div1 {
+            background-color: tomato;
+            font-size: 18px;
+            margin-top: 5px;
+            flex-direction: column;
+            padding-right: 30%;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        #parent {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px;
+
+        }
+
+        #parent button {
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div style="margin-bottom: 10px;">
+            <input type="text" id="input" placeholder="comment here">
+        </div>
+        <div>
+            <button onclick="like()" id="like">Like</button>
+            <button onclick="comment()" id="comm">Comment</button>
+        </div>
+
+
+        <div id="parent">
+            <div id="div1">
+            </div>
+
+            <div>
+                <button>Delete</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

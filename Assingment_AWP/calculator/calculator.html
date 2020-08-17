@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+
+    <script src="mam.js"></script>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url(cal.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            border: 2px solid gray;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 315px;
+            margin: 77px 107px;
+
+        }
+
+        .input {
+            display: flex;
+            flex-direction: column;
+            width: 230px;
+            margin-top: 31px
+        }
+
+        .input input {
+            margin: 5px;
+            padding: 0px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 23px;
+            border: 3px solid gray;
+            border-radius: 17px;
+        }
+
+        .btn {
+            display: flex;
+            justify-content: center;
+
+            margin-top: 31px;
+
+        }
+
+        .btn button {
+            margin: 9px;
+            padding: 3px 10px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 30px;
+            border: 3px solid gray;
+            border-radius: 25px
+        }
+
+        .sub {
+            display: flex;
+    flex-direction: column;
+    width: 186px;
+    margin-bottom: 22px;
+    padding: 10px 0px;
+        }
+
+        .sub button {
+            margin: 5px;
+            padding: 5px;
+            text-align: center;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 30px;
+            border: 3px solid gray;
+            border-radius: 17px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="input">
+            <input id="num1" type="number"    placeholder="num1">
+            <input id="num2" type="number" placeholder="num2">
+            <input id="ans" type="number" placeholder="ans">
+        </div>
+
+        <div class="btn">
+            <button onclick="cal(sum)" id="sum">+</button>
+            <button onclick="cal(min)" id="min">-</button>
+            <button onclick="cal(mul)" id="mul">*</button>
+            <button onclick="cal(div)" id="div">/</button>
+            <button onclick="clear()" id="c">C</button>
+        </div>
+
+
+        <div class="sub">
+            <button onclick="sub()" id="sub" type="submit">Answer</button>
+        </div>
+    </div>
+</body>
+
+</html>

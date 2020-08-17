@@ -1,0 +1,12 @@
+.commom-style{
+    color: yellow;
+    background: blue;
+    border: 5px dotted black;
+    border-radius: 55px;
+    
+    font-size: 35px;
+    font-family: cursive;
+    text-align: center;
+    
+    margin-bottom: 16px;
+    padding: 12px;

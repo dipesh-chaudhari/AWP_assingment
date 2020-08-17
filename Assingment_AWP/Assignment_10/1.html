@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <title>Post</title>
+    <script src="1.js"></script>
+</head>
+
+<body>
+    <div class="cointainer-fluid ">
+        <div class="row bg-primary justify-content-between align-items-center sticky-top rounded" style="height: 50px;">
+            <div class="col-3 col-md-6 ml-5 text-light" style="font-size: 20px; font-weight: bold;">My Project</div>
+            <div class="col-3 col-md-2 "><button class="btn btn-success">Login</button></div>
+        </div>
+
+        <div class="row  justify-content-between" style="height:100vh;">
+
+            <div class="col-0 col-md-3 bg-secondary"></div>
+
+
+            <div class="col-12 col-md-6 bg-secondary">
+                <!-- post1 -->
+                <div class="row bg-dark text-light border border-light rounded-lg align-items-center"
+                    style="height: 50px;">
+                    <div class="col-1">
+                        <img src="dip.jpg" alt="..." class="rounded-circle m-1" style="height: 40px;">
+                    </div>
+
+                    <div class="col-11 ">
+                        <div class="row pl-3 font-weight-bold font-italic">_dip._zone</div>
+                        <div class="row pl-4 text-secondary">C-DAC Mumbai-Kharghar</div>
+                    </div>
+                </div>
+
+                <div class="row border " style="height: 500px;">
+                    <img src="clg.jpg" alt="..." class="img-fluid"
+                        style="background-position: center; height: 100%; width: 100%; background-size: cover;" ;>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <button onclick="btnlike(this)" class="btn btn-outline-danger btn-block">Like <span>0</span>
+                        </button>
+                    </div>
+                    <div class="col-7 p-0">
+                        <input type="text" name="" id="" class="input-group input-group-lg rounded-lg"
+                            style="height: 39px;" placeholder="Comment here...">
+                    </div>
+                    <div class="col-3 p-0 ">
+                        <button onclick="btncomment(this)" class="btn btn-block btn-outline-success">Comment</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="row mt-2" style="visibility: hidden;">
+                        <div class="col-10 p=0">sample comment..</div>
+                        <div class="col-2 p=0">
+                            <button onclick="btndelete(this)" class="btn btn-danger btn-sm btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- post2 -->
+
+                <div class="row bg-dark text-light border border-light rounded-lg align-items-center"
+                    style="height: 50px;">
+                    <div class="col-1">
+                        <img src="prth.jpg" alt="..." class="rounded-circle m-1" style="height: 40px;">
+                    </div>
+
+                    <div class="col-11 ">
+                        <div class="row pl-3 font-weight-bold font-italic">Pretham_patil</div>
+                        <div class="row pl-4 text-secondary">RCPIT Shirpur</div>
+                    </div>
+                </div>
+
+                <div class="row border " style="height: 500px;">
+                    <img src="prthpost.jpg" alt="..." class="img-fluid"
+                        style="background-position: center; height: 100%; width: 100%; background-size: cover;" ;>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <button onclick="btnlike(this)" class="btn btn-outline-danger btn-block">Like <span>0</span>
+                        </button>
+                    </div>
+                    <div class="col-7 p-0">
+                        <input type="text" name="" id="" class="input-group input-group-lg rounded-lg"
+                            style="height: 39px;" placeholder="Comment here...">
+                    </div>
+                    <div class="col-3 p-0 ">
+                        <button onclick="btncomment(this)" class="btn btn-block btn-outline-success">Comment</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="row mt-2" style="visibility: hidden;">
+                        <div class="col-10 p=0">sample comment..</div>
+                        <div class="col-2 p=0">
+                            <button onclick="btndelete(this)" class="btn btn-danger btn-sm btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post3 -->
+                <div class="row bg-dark text-light border border-light rounded-lg align-items-center"
+                    style="height: 50px;">
+                    <div class="col-1">
+                        <img src="vish.jpg" alt="..." class="rounded-circle m-1" style="height: 40px;">
+                    </div>
+
+                    <div class="col-11 ">
+                        <div class="row pl-3 font-weight-bold font-italic">_vishu _havaldar</div>
+                        <div class="row pl-4 text-secondary">Kohlapur</div>
+                    </div>
+                </div>
+
+                <div class="row border " style="height: 500px;">
+                    <img src="vishpost.jpg" alt="..." class="img-fluid"
+                        style="background-position: center; height: 100%; width: 100%; background-size: cover;" ;>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <button onclick="btnlike(this)" class="btn btn-outline-danger btn-block">Like <span>0</span>
+                        </button>
+                    </div>
+                    <div class="col-7 p-0">
+                        <input type="text" name="" id="" class="input-group input-group-lg rounded-lg"
+                            style="height: 39px;" placeholder="Comment here...">
+                    </div>
+                    <div class="col-3 p-0 ">
+                        <button onclick="btncomment(this)" class="btn btn-block btn-outline-success">Comment</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="row mt-2" style="visibility: hidden;">
+                        <div class="col-10 p=0">sample comment..</div>
+                        <div class="col-2 p=0">
+                            <button onclick="btndelete(this)" class="btn btn-danger btn-sm btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- post4 -->
+                <div class="row bg-dark text-light border border-light rounded-lg align-items-center"
+                    style="height: 50px;">
+                    <div class="col-1">
+                        <img src="aksh.jpg" alt="..." class="rounded-circle m-1" style="height: 40px;">
+                    </div>
+
+                    <div class="col-11 ">
+                        <div class="row pl-3 font-weight-bold font-italic">_akshay _Bondar</div>
+                        <div class="row pl-4 text-secondary">My City Naded</div>
+                    </div>
+                </div>
+
+                <div class="row border " style="height: 500px;">
+                    <img src="akshpost.jpg" alt="..." class="img-fluid"
+                        style="background-position: center; height: 100%; width: 100%; background-size: cover;" ;>
+                </div>
+
+                <div class="row">
+                    <div class="col-2 p-0">
+                        <button onclick="btnlike(this)" class="btn btn-outline-danger btn-block">Like <span>0</span>
+                        </button>
+                    </div>
+                    <div class="col-7 p-0">
+                        <input type="text" name="" id="" class="input-group input-group-lg rounded-lg"
+                            style="height: 39px;" placeholder="Comment here...">
+                    </div>
+                    <div class="col-3 p-0 ">
+                        <button onclick="btncomment(this)" class="btn btn-block btn-outline-success">Comment</button>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-column">
+                    <div class="row mt-2" style="visibility: hidden;">
+                        <div class="col-10 p=0">sample comment..</div>
+                        <div class="col-2 p=0">
+                            <button onclick="btndelete(this)" class="btn btn-danger btn-sm btn-block">Delete</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="col-0 col-md-3 bg-secondary"></div>
+
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
