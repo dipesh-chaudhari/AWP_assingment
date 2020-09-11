@@ -1,0 +1,278 @@
+Name		:	Dipesh Chandrakant Chaudhari
+Student Id	:	200240320035
+Assignment	:	1
+Subject		: 	OS
+
+================================================================================================================
+
+Q1. Explore the following commands with various options, refer man pages for 
+    further help a) date b) cal c) bc d) echo e) who f) whoami g) logname g) uname h)
+    seq i) clear
+
+==>>	
+	a)	date +"%A %B %d %Y %H:%M"
+	b)	 cal 9 2020
+	c)	echo "x=10; ++x  "| bc
+	d)	x=`echo "12+5" | bc` echo$x
+	e)	show who is logged on
+	f)	 print effective userid
+	g)	print user´s login name
+	h)	print system information like linux
+	i)	seq 2 5 100
+	j)	clear ternimal screen ctrl+l
+	
+================================================================================================================
+
+Q2.	A) Create three directory a b and c and create a.txt,b.txt and c.txt
+	in each directory respectively and then copy c directory into the a.
+	
+==>>
+	A)
+	=> mkdir a b c
+	    touch a.txt, touch b.txt, touch c.txt
+	    cp -r c a
+---------------------------------------------------------------------------------
+	B) Move Directory b to c.
+	=> mv b c
+---------------------------------------------------------------------------------
+	C)Create alias of ls -lh command to your name.
+	=> 
+	   alias cdac="ls"
+	   unalias cdac
+---------------------------------------------------------------------------------
+	D) Change Directory name a to cdac.
+	=> mv a CDAC
+================================================================================================================
+
+Q3. 	A) Create five files file1.txt , file2.txt ,file3.txt file4.txt and
+    	file5.txt with some text inside it. Search for 's' character
+    	inside all the files using grep command.
+    	Also Use cat to view all file content together.
+	
+=>	grep -o "s" file1 file2 file3 file4 file5
+---------------------------------------------------------------------------------
+	B) Create file.txt using cat and edit that using nano editor.
+	
+=> 	cat > file7  nano file7
+--------------------------------------------------------------------------------
+	c) Create 5 empty files using touch command
+	
+=>	touch a b c d e
+-----------------------------------------------------------------------------------
+	D) Remove previously created directory a , b and c.
+	
+=>	rm -r a b c
+================================================================================================================
+
+Q4. 	Create a file with some content using vi editor
+	a) Display the file using cat command
+	
+=>	cat file7
+------------------------------------------------------------------------
+	b) Display line numbers along with content
+	
+=>	cat -n file7
+---------------------------------------------------------------------------------
+	c) Display the file in reverse order using tac
+	
+=>	tac  -r a b
+------------------------------------------------------------------------------------
+	d) Combine multiple files using cat command
+	
+=>	cat -b a b
+================================================================================================================
+
+Q5. Create Random some files and sub directories.
+	a) display files row wise, column wise, 1 per row
+	
+=>	ls -1
+-------------------------------------------------------------------------------------
+	b) sort the files in ascending, descending order
+	
+=>	 sort f ,sort -r f
+------------------------------------------------------------------------------------------
+	c) Create some hidden files and sub directories and display them using “ls -a”
+	
+=>	cat >.abc , mkdir .pqr .xyz ,ls -a
+---------------------------------------------------------------------------------------------- 
+	d) Change time stamp of some files and directories using touch command and display the files using ls -t ls -rt
+	
+=>	touch -r a file1
+------------------------------------------------------------------------------------------------------
+	f) display all attributes of files and directories using ls -l
+	
+=>	It shows all files and directory with ceration timestamp
+-----------------------------------------------------------------------------------------------	
+	g) display attributes of a directory using ls -ld
+	
+=>	drwxrwxrwx 1 dipesh dipesh 4096 Sep  8 00:04 .
+------------------------------------------------------------------------------------------------
+
+Q1.	 Create directory of your name and then create 4 files inside it named
+	 a.txt, b.txt, c.txt and d.sh. And change the directory permission to
+	 only user and also files permission to only user such that
+		
+	a) user can read and write the file a.txt and b.txt
+		
+=>	chmod u+rw a.txt b.txt
+-------------------------------------------------------------------------------------------------------
+	b) user can write the file c.txt
+		
+=>	chmod u+w c.txt
+-----------------------------------------------------------------------------------------------------
+	c) user can exectuable the file d.sh. Make
+	   Contents of file d.sh:
+	   #/bin/sh
+	   ls -lh
+		
+=>	chmod u+x d.sh
+===========================================================================================================
+Q2. 	Change the permission of the previous directory to executable only.
+	Analyze the output.
+	
+=>	chmod u+x dipesh
+========================================================================================================
+Q3. 	Change the permission of the previous directory to read only.
+	Analyze the output.
+	
+=>	chmod u+r dipesh
+================================================================================================
+Q4. 	Use echo to list the all files of your home directory.
+	
+=>	echo *
+=================================================================================================
+Q5. 	Use echo to list the all files of /etc/ directory
+	=>echo *
+=======================================================================================
+Q6. 	Use echo to list the all files of /etc/ directory with extension name .conf
+	
+=>	echo *.config
+===============================================================================================
+Q7. 	Use echo to append your name to a.txt
+	
+=>	echo "Hello I am Dipesh">>a.txt
+=========================================================================================
+
+1.	Create Three level nested directory a,b and c
+==>
+	a) Create at least one hidden file in each directory
+		mkdir {a,b,c}
+
+
+	b) Create at least one normal text file in each directory
+		touch a/a.txt
+		touch b/b.txt 
+		touch c/c.txt
+
+
+	c) Copy c into a
+		cp c -r a
+
+
+	d) Copy file inside a into b
+		cp a/a.txt -r b/
+
+=============================================================================================================================
+2.	Change the third level directory c permission to read only
+==>	chmod -wx ./a/c
+=============================================================================================================================
+
+3.	Try copying third level c directory to outside of a
+==>	cp -r ./a/c ./
+	
+
+=============================================================================================================================
+4.	Create the directory  “data“ inside b
+==>
+	 mkdir ./b/data
+
+=============================================================================================================================
+5.	Change the permission of b to read and write only
+==>	 chmod +rw b
+
+=============================================================================================================================
+6.	Create directory “data2”  inside b
+==>
+	mkdir ./b/data
+
+=============================================================================================================================
+7.	Create data.txt file inside b
+==>
+ 	touch ./b/data.txt
+
+=============================================================================================================================
+8.	Rename the second level directory c to copied_dir
+==>
+	mv ./a/c ./a/copied_dir
+
+
+=============================================================================================================================
+9.	Change permission of copied_dir to only executable
+==>
+	chmod -rw ./a/copied_dir
+
+
+=============================================================================================================================
+10.	Try ls on copied_dir
+==>
+	ls ./a/copied_dir
+	ls: cannot open directory './a/copied_dir': Permission denied
+
+
+=============================================================================================================================
+11.	Try moving copied_dir to outside of a
+==>
+	mv ./a/copied_dir ./
+
+
+=============================================================================================================================
+12.	Try moving data directory outside of a
+==>
+	mv ./a/data ./
+	mv: cannot stat './a/data': No such file or directory
+
+=============================================================================================================================
+13.	Now change the owner of the directory a to root
+==>
+	chown a root
+
+=============================================================================================================================
+14.	Change permission of a to read write and executable to only user
+==>
+	chmod +rwx a
+
+=============================================================================================================================
+15.	Try creating directory sample inside a
+==>
+	mkdir ./a/sample
+
+=============================================================================================================================
+20.	Create directory x outside a
+==>	
+	mkdir ~/a/x
+	
+=============================================================================================================================
+21.	Try moving x inside a
+==>
+	mv ~/x ./
+
+=============================================================================================================================
+22.	Create directory movies
+==>
+		mkdir movies
+
+=============================================================================================================================
+24.	Change group of movies to sudo
+==>
+		sudo addgroup movies
+		sudo chgrp movies
+
+=============================================================================================================================
+25.	Change group of movies to avahi
+==>
+	sudo chgrp movies avahi
+	chgrp: cannot access 'avahi': No such file or directory
+
+=============================================================================================================================
+
+
