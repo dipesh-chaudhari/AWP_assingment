@@ -4,13 +4,13 @@
 
 ---
 
-```
+`
 class Ass1{
     public static void main(String[] args) {
         System.out.println("Hello");
     }
 }
-```
+`
 
 ### 02.	Write a program to declare a variable named rollNo of integer type. Assign it a value (let say 100) to it and print the following statement roll no = 100 .
 
